@@ -6,10 +6,10 @@ library(DBI)
 library(dplyr)
 
 # using Package Keyring to secure Database Password and Username
-install.packages('keyring')
+#   install.packages('keyring')
 library(keyring)
 
-key_set(service = 'demo', username = 'postgres')
+# key_set(service = 'demo', username = 'postgres') # uncomment and run
 
 #################################################
 #in every 24 hours
