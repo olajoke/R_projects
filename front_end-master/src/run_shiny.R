@@ -257,10 +257,11 @@ observeEvent(input$save_btn,{
                 conn <- dbConnect(
                     drv,
                     dbname = "postgres",
-                    host = "34.76.144.177",
+                    host = db_ipAddress,,
                     port = 5432,
-                    user = "postgres",
-                    password = "yJKLI8gyEkGgJ71I")
+                    user = username,
+                    password = key_get('demo', username)
+                )
                 
                 IdPlusOne <- sum(dbGetQuery(conn, "SELECT MAX(customer_id) FROM churn_yesno"), 1)
                 
@@ -298,10 +299,11 @@ observeEvent(input$save_btn,{
                 conn <- DBI::dbConnect(
                     drv,
                     dbname = "postgres",
-                    host = "34.76.144.177",
+                    host = db_ipAddress,,
                     port = 5432,
-                    user = "postgres",
-                    password = "yJKLI8gyEkGgJ71I")
+                    user = username,
+                    password = key_get('demo', username)
+                )
                 
                 get_query <- as.numeric(input$get_query)
                 request_df <- dbGetQuery(conn, paste0("SELECT * FROM churn_yesno WHERE customer_id = '", get_query ,"'"))
