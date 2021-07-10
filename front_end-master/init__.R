@@ -12,6 +12,7 @@
 source("src/config.R")
 source("src/run_shiny.R")
 # install necessary packages --- it would be better to create a function
+library(keyring)
 library(shiny)
 library(shinyWidgets)
 library(shinythemes)
