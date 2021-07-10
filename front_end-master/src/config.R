@@ -2,7 +2,7 @@
 # Author: Y********, Olajoke Oladipo, W*****
 # Project: Prototyping Data Science Products
 # File: init__.R
-# Description: define external ip and port
+# Description: defines the external ip and port
 ###################################################################################################
 # Input: 
 # Output: main inputs to be used in GLOBAL.env
