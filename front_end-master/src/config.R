@@ -1,5 +1,5 @@
 ###################################################################################################
-# Author: Yili Yang, Olajoke Oladipo, Wenxi Feng
+# Author: Y********, Olajoke Oladipo, W*****
 # Project: Prototyping Data Science Products
 # File: init__.R
 # Description: define external ip and port
@@ -9,5 +9,5 @@
 ###################################################################################################
 
 # external ip and port for calling api's in front_end
-external_ip = "35.205.214.79"
+external_ip = "00.000.000.79" # not the real IP Address
 port = "8080"
